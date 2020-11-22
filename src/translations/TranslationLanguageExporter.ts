@@ -1,13 +1,13 @@
 import {Exporter} from "../Exporter";
 import {Translation} from "./Translation";
-import {TargetDir} from "../dir/TargetDir";
 import {Language} from "../language/Language";
 import {TranslationLanguageWriter} from "./TranslationLanguageWriter";
+import {Dir} from "../dir/Dir";
 
 export class TranslationLanguageExporter implements Exporter<Translation[]> {
 
     constructor(
-        private readonly targetDir: TargetDir,
+        private readonly targetDir: Dir,
         private readonly languages: Language[],
     ) {}
 

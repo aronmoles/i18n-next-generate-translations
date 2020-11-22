@@ -1,4 +1,3 @@
-import XmlFile from "../src/file/XmlFile";
 import {Language} from "../src/language/Language";
 
 describe('Language', () => {

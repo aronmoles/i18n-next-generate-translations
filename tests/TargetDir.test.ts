@@ -1,7 +1,6 @@
 import {TargetDir} from "../src/dir/TargetDir";
 
 const fs = require("fs");
-
 jest.mock('fs');
 
 describe('TargetDir', () => {

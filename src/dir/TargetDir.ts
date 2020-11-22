@@ -20,7 +20,7 @@ export class TargetDir implements Dir {
         return true;
     }
 
-    get dirPath(): string {
+    dirPath(): string {
         return this._dirPath;
     }
 }
