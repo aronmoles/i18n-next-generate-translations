@@ -26,7 +26,8 @@ export class FileProcessor<T> implements Processor {
         const data = await this._parser.parse();
         let result = true;
         for (const exporter of this.exporters) {
-            result = result && (await exporter.export(data))
+            const resultExportation = await exporter.export(data);
+            result = result && resultExportation;
         }
         return result;
     }
