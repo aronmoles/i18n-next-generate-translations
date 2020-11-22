@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<translations>
+<translations
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="file:../schema/TranslationsSchema.xsd"
+>
+    <translation code="TR_SEXON">
+        <value language="es">Sexon es</value>
+        <value language="en">Sexon en</value>
+    </translation>
+    <translation code="TR_SEXON">
+        <value language="es">Sexon es</value>
+        <value language="en">Sexon en</value>
+    </translation>
     <translation code="TR_SEXON">
         <value language="es">Sexon es</value>
         <value language="en">Sexon en</value>
