@@ -4,12 +4,21 @@
   "author": "Aarón Molés",
   "license": "MIT",
   "main": "./lib/index.js",
+  "repository": {
+    "url": "https://github.com/aronmoles/i18n-next-generate-translations"
+  },
+  "keywords": ["i18-next"],
   "bin": {
     "generate-translations": "./lib/index.js"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "build": "tsc -p .",
-    "test": "jest"
+    "build": "tsc",
+    "test": "jest",
+    "prepublish": "yarn build",
+    "publish-npm": "yarn publish --new-version $npm_package_version --tag $npm_package_version --access public"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
