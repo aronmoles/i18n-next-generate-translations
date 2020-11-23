@@ -13,6 +13,9 @@ export class Translation {
     }
 
     public getTranslation(language: string): string {
+        if (!this._translations[language]) {
+            throw new Error(`Not found translation ${this._code} in language ${language}`)
+        }
         return this._translations[language];
     }
 

@@ -11,6 +11,15 @@ describe('XmlFile', () => {
         new XmlFile('/path/file.xml');
     })
 
+    test('XmlFile getFileContent', () => {
+        fs.existsSync.mockReturnValue(true);
+        fs.readFileSync.mockReturnValue('Content');
+
+        const xmlFile = new XmlFile('/path/file.xml');
+
+        expect(xmlFile.getFileContent()).toEqual('Content')
+    })
+
     test('XmlFile constructor error', () => {
         fs.existsSync.mockReturnValue(false);
 
