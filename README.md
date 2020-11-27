@@ -3,16 +3,16 @@
 ## Installation
 
 ```
-npm add --save-dev i18n-next-generate-translations
+npm install --save-dev i18n-next-generate-translations
 ```
 
 or
 
 ```
-yarn install -D i18n-next-generate-translations
+yarn add -D i18n-next-generate-translations
 ```
 
-## How to usase
+## How to usage
 
 First step, we should to create a XML file that contains our translations in all languages. 
 The file should have the next format:
