@@ -17,7 +17,7 @@ export class TranslationLanguageWriter implements Writer<Translation[]> {
         for (const translation of translations) {
             data[translation.getCode()] = translation.getTranslation(this.language.code);
         }
-        fs.writeFileSync(path.join(this.targetDir.dirPath(), `tranlations.${this.language.code}.json`), JSON.stringify(data, null, 2))
+        fs.writeFileSync(path.join(this.targetDir.dirPath(), `translations.${this.language.code}.json`), JSON.stringify(data, null, 2))
     }
 
 }

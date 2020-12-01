@@ -1,6 +1,6 @@
 {
   "name": "i18n-next-generate-translations",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "Aarón Molés",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -12,7 +12,8 @@
     "generate-translations": "./lib/index.js"
   },
   "files": [
-    "lib"
+    "lib",
+    "schema"
   ],
   "scripts": {
     "build": "tsc",
