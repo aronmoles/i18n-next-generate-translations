@@ -1,6 +1,6 @@
 {
   "name": "i18n-next-generate-translations",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "author": "Aarón Molés",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -19,7 +19,7 @@
     "build": "tsc",
     "test": "jest",
     "prepublish": "yarn build",
-    "publish-npm": "yarn publish --new-version $npm_package_version --tag $npm_package_version --access public"
+    "publish-npm": "yarn publish --new-version $npm_package_version --tag latest --access public"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
