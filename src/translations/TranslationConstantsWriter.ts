@@ -12,10 +12,7 @@ export class TranslationConstantsWriter implements Writer<Translation[]> {
 
     write(translations: Translation[]): void {
         const data: string = `export class TR {\n${translations.map((translation) => `\tpublic static ${translation.getCode()} = '${translation.getCode()}';`)}\n}`;
-        for (const translation of translations) {
-
-        }
-        fs.writeFileSync(path.join(this.constantsDir.dirPath(), 'TR.ts'), data)
+        fs.writeFileSync(path.join(this.constantsDir.dirPath(), 'TR.ts'), data);
     }
 
 }
